@@ -1,0 +1,7 @@
+torch
+transformers
+nltk
+tqdm
+rouge_score
+evaluate
+wandb
