@@ -2,7 +2,7 @@
 
 Major codes are borrowed from [AAAI 2022 EEG-To-Text](https://github.com/MikeWangWZHL/EEG-To-Text).
 
-## Fistly，please unzip the module.zip
+## Firstly，please unzip the module.zip
 
 ## Setup the Environment
 You can first setup a conda python environment to make everything works well and then setup the working environment.
