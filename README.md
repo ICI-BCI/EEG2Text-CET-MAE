@@ -1,6 +1,5 @@
 # Contrastive Pretraining for EEG-to-Text Generation
 
-This is the official implementation of our IEEE TNSRE paper [Aligning Semantic in Brain and Language: A Curriculum Contrastive Method for Electroencephalography-to-Text Generation](https://ieeexplore.ieee.org/abstract/document/10248031).
 Major codes are borrowed from [AAAI 2022 EEG-To-Text](https://github.com/MikeWangWZHL/EEG-To-Text).
 
 ## Setup the Environment
@@ -26,25 +25,26 @@ python data_factory/data2pickle_v1.py
 python data_factory/data2pickle_v2.py
 ```
 
-
-## Contrastive Pretraining
-
+## Over all Pretraining & EEG-Text Training
 ```bash
-cd contrastive_eeg_pretraining
-python contrastive_train_curriculum.py -c contrastive_config/contrastive_train.yaml
+bash cet_mae_eeg2text_gpu2_7575.sh
 ```
 
-## Overall Training
+## Contrastive EEG-Text Pretraining
+
 ```bash
-cd contrastive_eeg2text
-python train.py -c config/train.yaml
+python pre_train_eval_cet_mae_later_project_7575.py -c config/train_eval_cet_mae_gpu2_7575.yaml
+```
+
+## EEG-Text Training
+```bash
+python train_decoding_eeg_2_text_cet_mae.py -c config/train_eval_decoding_eeg_text_gpu2_7575.yaml
 ```
 
 
 ## Testing
 ```bash
-cd contrastive_eeg2text
-python eval.py -c config/train.yaml
+python eval_decoding_eeg_2_text_cet_mae.py -c config/train_eval_decoding_eeg_text_gpu2_7575.yaml
 ```
 
 
