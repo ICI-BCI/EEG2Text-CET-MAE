@@ -1,4 +1,4 @@
-# Contrastive Pretraining for EEG-to-Text Generation
+# Contrastive EEG-Text Masked Autoencoder(CET-MAE) Pretraining for EEG-to-Text Generation & TENET
 
 Major codes are borrowed from [AAAI 2022 EEG-To-Text](https://github.com/MikeWangWZHL/EEG-To-Text).
 
