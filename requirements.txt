@@ -1,7 +1,14 @@
 torch
 transformers
+fuzzy_match
 nltk
-tqdm
-rouge_score
+rouge
+matplotlib
+scikit-learn
+SentencePiece
+einops
 evaluate
-wandb
+absl-py
+rouge_score
+h5py
+jiwer
