@@ -5,7 +5,7 @@ Major codes are borrowed from [AAAI 2022 EEG-To-Text](https://github.com/MikeWan
 ## Setup the Environment
 You can first setup a conda python environment to make everything works well and then setup the working environment.
 ```bash
-conda create -n eeg2text python=3.9
+conda create -n eeg2text python=3.8
 conda activate eeg2text
 cd PATH_TO_PROJECT/contrastive_eeg2text
 pip install -r requirements.txt
