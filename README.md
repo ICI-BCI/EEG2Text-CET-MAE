@@ -7,7 +7,7 @@ You can first setup a conda python environment to make everything works well and
 ```bash
 conda create -n eeg2text python=3.8
 conda activate eeg2text
-cd PATH_TO_PROJECT/contrastive_eeg2text
+cd PATH_TO_PROJECT/EEG-Text-CET-MAE
 pip install -r requirements.txt
 ```
 
